@@ -1,4 +1,4 @@
-package com.cezklosowski.module.dashboard;
+package com.cezklosowski.module.dashboard.dto;
 
 public class MenuDto {
 

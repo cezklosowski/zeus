@@ -1,19 +1,23 @@
 package com.cezklosowski.module.dashboard;
 
+import com.cezklosowski.module.dashboard.service.ArticleService;
+import com.cezklosowski.module.dashboard.service.MenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.List;
-
 @Controller
 public class DashboardController {
 
-    @Autowired
     private MenuService menuService;
-    @Autowired
     private ArticleService articleService;
+
+    @Autowired
+    public DashboardController(MenuService menuService, ArticleService articleService) {
+        this.menuService = menuService;
+        this.articleService = articleService;
+    }
 
     @RequestMapping("/dashboard")
     public String getDashboard(Model model){

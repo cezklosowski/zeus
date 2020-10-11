@@ -1,5 +1,7 @@
-package com.cezklosowski.module.dashboard;
+package com.cezklosowski.module.dashboard.service;
 
+import com.cezklosowski.module.dashboard.dto.ArticleDto;
+import com.cezklosowski.module.dashboard.dto.CommentDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.cezklosowski.module.dashboard;
+package com.cezklosowski.module.dashboard.dto;
 
 import java.util.List;
 
