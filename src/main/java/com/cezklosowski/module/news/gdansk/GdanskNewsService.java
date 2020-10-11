@@ -11,7 +11,10 @@ public class GdanskNewsService implements NewsService {
     public List<String> getLastNews() {
         return List.of(
                 "1 - News from Gdańsk...",
-                "2 - News from Gdańsk..."
+                "2 - News from Gdańsk...",
+                "3 - News from Gdańsk...",
+                "4 - News from Gdańsk...",
+                "5 - News from Gdańsk..."
         );
     }
 }
