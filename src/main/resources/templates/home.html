@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Zeus</title>
+</head>
+<body>
+    <p>
+        Name: <span th:text="${person.name}"> Mogę coś wpisać, ale zostanie zastąpione przez zmienną</span>
+    </p>
+    <p>
+        Surname: <span th:text="${person.surname}"></span>
+    </p>
+    <p>
+        Age: <span th:text="${person.age}"></span>
+    </p>
+</body>
+</html>
+
