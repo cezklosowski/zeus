@@ -5,15 +5,30 @@
     <title>Zeus</title>
 </head>
 <body>
-    <p>
-        Name: <span th:text="${person.name}"> Mogę coś wpisać, ale zostanie zastąpione przez zmienną</span>
-    </p>
-    <p>
-        Surname: <span th:text="${person.surname}"></span>
-    </p>
-    <p>
-        Age: <span th:text="${person.age}"></span>
-    </p>
+
+<section>
+    <h1>String</h1>
+    <p>Name: <span th:text="${name}">Adam</span></p>
+</section>
+
+<section>
+    <h1>Obj</h1>
+    <p>Name: <span th:text="${person.name}">...Name...</span></p>
+    <p>Surname: <span th:text="${person.surname}">...Surname...</span></p>
+    <p>Age: <span th:text="${person.age}">...Age...</span></p>
+    <hr/>
+</section>
+
+<section>
+    <h1>List</h1>
+    <div th:each="person: ${persons}">
+        <p> Name: <span th:text="${person.getName()}"> Mogę coś wpisać, ale zostanie zastąpione przez zmienną</span></p>
+        <p> Surname: <span th:text="${person.getSurname()}"></span></p>
+        <p> Age: <span th:text="${person.age}">Niejawne wywołanie metody getAge(), a nie odwołanie do pola, bo przecież jest prywatne.</span></p>
+        <hr/>
+    </div>
+</section>
+
 </body>
 </html>
 
